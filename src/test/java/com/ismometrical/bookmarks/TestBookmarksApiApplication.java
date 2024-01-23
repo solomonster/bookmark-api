@@ -17,7 +17,7 @@ public class TestBookmarksApiApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.from(BookmarksApiApplication::main).with(TestBookmarksApiApplication.class).run(args);
+		SpringApplication.from(Application::main).with(TestBookmarksApiApplication.class).run(args);
 	}
 
 }
