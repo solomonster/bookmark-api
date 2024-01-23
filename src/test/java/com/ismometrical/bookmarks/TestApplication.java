@@ -8,7 +8,7 @@ import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.utility.DockerImageName;
 
 @TestConfiguration(proxyBeanMethods = false)
-public class TestBookmarksApiApplication {
+public class TestApplication {
 
 	@Bean
 	@ServiceConnection
@@ -17,7 +17,7 @@ public class TestBookmarksApiApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.from(Application::main).with(TestBookmarksApiApplication.class).run(args);
+		SpringApplication.from(Application::main).with(TestApplication.class).run(args);
 	}
 
 }
